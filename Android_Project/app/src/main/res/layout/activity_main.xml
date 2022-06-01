@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:stretchColumns="*"
+        android:gravity="center">
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ico_env_press"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ico_env_th"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/env_press_tv"
+                android:text="0.00 hPa"
+                android:textSize="24sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/env_th_tv"
+                android:text="0.00°C  0.00%"
+                android:textSize="24sp"
+                android:gravity="center"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sys_tim_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:text="2022/05/05 18:12:20 周四"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/time_set_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置时间"/>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/read_alarm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="读取闹钟"/>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/clear_alarm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除闹钟"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/alarm_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+</LinearLayout>

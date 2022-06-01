@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HWatchFX</string>
+    <string name="permission_gps_tittle">Location service</string>
+    <string name="permission_gps_msg">Application is unable to locate your position. Make sure mobile network and GPS services are enabled in your device\'s settings.</string>
+</resources>
