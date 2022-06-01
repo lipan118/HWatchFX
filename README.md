@@ -22,6 +22,10 @@ STM32F103+LVGL 时钟
 
 - V8.3.0
 
+#### 参考资料：
+
+- 链接：https://pan.baidu.com/s/1wMGBNSdwpkVUMdCN4xuFIQ  提取码：buom 
+
 #### 视频：
 
 - https://www.youtube.com/watch?v=LbkIThIVz7Y
